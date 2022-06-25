@@ -72,7 +72,7 @@
     align-items: center;
     gap: 1em;
     border-radius: 25px;
-    border: 2px solid var(--border); 
+    border: 2px solid var(--border);
 }
 
 .link:hover {
@@ -136,7 +136,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .nav-menu a {
@@ -155,6 +155,7 @@
     margin: 1em;
     border: 0;
 }
+
 .nav-link-active {
     background: var(--highlight);
     border-radius: 25px;
@@ -176,6 +177,7 @@
     width: 1.8em;
     height: auto;
 }
+
 .hamburgher {
     cursor: pointer;
 }
@@ -208,6 +210,7 @@
     .sidebar {
         display: none;
     }
+
     .navbar-error {
         height: 4em;
     }
@@ -251,6 +254,7 @@
         left: 0;
     }
 }
+
 .content {
     width: 100%;
     height: 50em;
@@ -259,17 +263,64 @@
 
 .content-1 {
     display: flex;
+    gap: 2em;
 }
-.content h2 {
+
+.content-1-a {
+    background: var(--lightdark);
+    height: 18em;
+    width: 50%;
+    border-radius: 25px;
+    padding: 2em;
+}
+
+.content-1-b {
+    background: var(--lightdark);
+    height: 18em;
+    width: 50%;
+    border-radius: 25px;
+    padding: 2em;
+}
+
+.content-title {
     color: var(--white);
     padding: 1em 0 1em 0;
+    font-weight: 500;
 }
+
+.graph {
+    display: flex;
+    flex-direction: row;
+    gap: .3em;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.graph-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.graph-dates p {
+    color: #ccc;
+    font-size: .7em;
+    padding-top: 1em;
+}
+
+
+
+
+
+
+
 
 .useful-links {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
+
 .useful-link {
     display: flex;
     align-items: center;
@@ -280,6 +331,7 @@
     width: 8em;
     border: 2px solid var(--border);
 }
+
 .useful-link a {
     color: var(--white);
     text-decoration: none;
