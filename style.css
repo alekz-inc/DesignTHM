@@ -48,11 +48,10 @@
     gap: 1em;
 }
 
-.sidebar-links a {
-    color: var(--white);
-    text-decoration: none;
+.sidebar-links button {
+    cursor: pointer;
+    color: #fff;
 }
-
 .link {
     padding: .6em;
     width: 10em;
