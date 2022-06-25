@@ -8,6 +8,7 @@
     <title>Hustle Academy</title>
     <link rel="icon" href="icons/logo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
 </head>
 
 <body>
@@ -18,22 +19,18 @@
             <a href="index.html">Hustle Academy</a>
         </div>
         <div class="nav-menu">
-            <div class="nav-link" href="index.html">
-                <img src="icons/home.png">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="nav-link" href="services.html">
-                <img src="icons/heart.png">
-                <a href="services.html">Services</a>
-            </div>
-            <div class="nav-link" href="services.html">
-                <img src="icons/services.png">
-                <a href="services.html">Services</a>
-            </div>
-            <div class="nav-link" href="contact.html">
-                <img src="icons/mail.png">
-                <a href="#">Contact</a>
-            </div>
+            <button class="nav-link">
+                <a href="index.html"><img src="icons/home.png">Home</a>
+            </button>
+            <button class="nav-link">
+                <a href="#"><img src="icons/heart.png">Heart</a>
+            </button>
+            <button class="nav-link-active">
+                <a href="services.html"><img src="icons/services.png">Services</a>
+            </button>
+            <button class="nav-link">
+                <a href="contact.html"><img src="icons/mail.png">Contact</a>
+            </button>
         </div>
         <div class="hamburgher">
             <span class="bar"></span>
@@ -52,28 +49,29 @@
             </div>
             <hr class="solid">
             <div class="sidebar-links">
-                <div class="link active">
-                    <img src="icons/home.png">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="link">
-                    <img src="icons/heart.png">
-                    <a href="design.html">Design</a>
-                </div>
-                <div class="link-active">
-                    <img src="icons/services.png">
-                    <a href="services.html">Services</a>
-                </div>
-                <div class="link">
-                    <img src="icons/mail.png">
-                    <a href="contact.html">Contact</a>
-                </div>
+                <button class="link">
+                    <a href="index.html"><img src="icons/home.png">Home</a>
+                </button>
+                <button class="link">
+                    <a href="#"><img src="icons/heart.png">Heart</a>
+                </button>
+                <button class="link">
+                    <a href="#"><img src="icons/inbox.png">Inbox</a>
+                </button>
+                <button class="link-active">
+                    <a href="services.html"><img src="icons/services.png">Services</a>
+                </button>
+                <button class="link">
+                    <a href="contact.html"><img src="icons/mail.png">Contact</a>
+                </button>
             </div>
             <hr class="solid">
         </div>
         <!--sidebar end -->
         <div class="content">
-            <a href="#">services</a>
+
+            <h1 style="color: #fff;">services</h1>
+
         </div>
     </div>
 
