@@ -18,7 +18,7 @@
             <img src="icons/logo.png">
             <a href="index.html">Hustle Academy</a>
         </div>
-        <div class="nav-menu">
+        <!-- <div class="nav-menu">
             <button class="nav-link-active">
                 <a href="index.html"><img src="icons/home.png">Home</a>
             </button>
@@ -31,7 +31,7 @@
             <button class="nav-link">
                 <a href="contact.html"><img src="icons/mail.png">Contact</a>
             </button>
-        </div>
+        </div> -->
         <div class="hamburgher">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -47,9 +47,10 @@
                 <img src="icons/logo.png">
                 <a href="index.html">Hustle Academy</a>
             </div>
-            <hr class="solid">
+
             <div class="sidebar-links">
-                <button class="link-active">
+                <p class="sidebar-title">General</p>
+                <button class="link">
                     <a href="index.html"><img src="icons/home.png">Home</a>
                 </button>
                 <button class="link">
@@ -64,92 +65,44 @@
                 <button class="link">
                     <a href="contact.html"><img src="icons/mail.png">Contact</a>
                 </button>
+
+                <p class="sidebar-title" id="ee">Quick links</p>
+                <button class="link" id="ee">
+                    <a href="#"><img src="icons/heart.png">Instagram</a>
+                </button>
+                <button class="link" id="ee">
+                    <a href="#"><img src="icons/like.png">Facebook</a>
+                </button>
+                <button class="link" id="ee">
+                    <a href="#"><img src="icons/menu.png">Twitter</a>
+                </button>
             </div>
-            <hr class="solid">
         </div>
         <!--sidebar end -->
         <div class="content">
 
-            <h2 class="content-title">Some things about us</h2>
+            <h2 class="content-title">Home</h2>
 
-            <div class="content-1">
+            <!-- <div class="content-1">
                 <div class="content-1-a">
                     <h4 style="color: #fff; font-weight: 500;">Add title</h4>
                     <p style="color: #fff; padding: .7em 0 2.2em 0; font-weight: 200;">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Veritatis nostrum incidunt, excepturi sequi dolores reprehenderit
                         nulla.</p>
-                    <div class="graph">
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 2em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 2em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 2em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 2em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 6em;"></div>
-                        <div class="line" style="height: 7em;"></div>
-                        <div class="line" style="height: 6em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 2em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 2em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 3em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 4em;"></div>
-                        <div class="line" style="height: 6em;"></div>
-                        <div class="line" style="height: 5em;"></div>
-                        <div class="line" style="height: 6em;"></div>
-                        <div class="line" style="height: 7em;"></div>
-                    </div>
-                    <div class="graph-dates">
-                        <p>Mar 2020</p>
-                        <p>Sep 2020</p>
-                        <p>Feb 2021</p>
-                        <p>Aug 2021</p>
-                        <p>Dec 2021</p>
-                        <p>May 2022</p>
-                        <p>July 2022</p>
-                    </div>
                 </div>
-                <div class="content-1-b">
-                    <h3 style="color: #fff;">world!</h3>
-                </div>
-            </div>
-
+            </div> -->
         </div>
     </div>
 
-
     <script>
         const hamburgher = document.querySelector(".hamburgher");
-        const navmenu = document.querySelector(".nav-menu");
+        const navmenu = document.querySelector(".sidebar-links");
 
         hamburgher.addEventListener("click", () => {
             hamburgher.classList.toggle("active");
             navmenu.classList.toggle("active");
         })
-        document.querySelectorAll(".nav-link").forEach(n >= n.addEventListener("click", () => {
+        document.querySelectorAll(".link").forEach(n >= n.addEventListener("click", () => {
             hamburgher.classList.remove("active");
             navmenu.classList.remove("active");
         }))

@@ -19,13 +19,13 @@
             <a href="index.html">Hustle Academy</a>
         </div>
         <div class="nav-menu">
-            <button class="nav-link">
+            <button class="nav-link-active">
                 <a href="index.html"><img src="icons/home.png">Home</a>
             </button>
             <button class="nav-link">
                 <a href="#"><img src="icons/heart.png">Heart</a>
             </button>
-            <button class="nav-link-active">
+            <button class="nav-link">
                 <a href="services.html"><img src="icons/services.png">Services</a>
             </button>
             <button class="nav-link">
@@ -49,6 +49,7 @@
             </div>
             <hr class="solid">
             <div class="sidebar-links">
+                <p class="sidebar-title">General</p>
                 <button class="link">
                     <a href="index.html"><img src="icons/home.png">Home</a>
                 </button>
@@ -58,33 +59,50 @@
                 <button class="link">
                     <a href="#"><img src="icons/inbox.png">Inbox</a>
                 </button>
-                <button class="link-active">
+                <button class="link">
                     <a href="services.html"><img src="icons/services.png">Services</a>
                 </button>
                 <button class="link">
                     <a href="contact.html"><img src="icons/mail.png">Contact</a>
                 </button>
+                <hr class="solid">
+                <p class="sidebar-title">Quick links</p>
+                <button class="link">
+                    <a href="#"><img src="icons/heart.png">Instagram</a>
+                </button>
+                <button class="link">
+                    <a href="#"><img src="icons/like.png">Facebook</a>
+                </button>
+                <button class="link">
+                    <a href="#"><img src="icons/menu.png">Twitter</a>
+                </button>
             </div>
-            <hr class="solid">
         </div>
         <!--sidebar end -->
         <div class="content">
 
-            <h1 style="color: #fff;">services</h1>
+            <h2 class="content-title">Services</h2>
 
+            <div class="content-1">
+                <div class="content-1-a">
+                    <h4 style="color: #fff; font-weight: 500;">Add title</h4>
+                    <p style="color: #fff; padding: .7em 0 2.2em 0; font-weight: 200;">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Veritatis nostrum incidunt, excepturi sequi dolores reprehenderit
+                        nulla.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-
     <script>
         const hamburgher = document.querySelector(".hamburgher");
-        const navmenu = document.querySelector(".nav-menu");
+        const navmenu = document.querySelector(".sidebar-links");
 
         hamburgher.addEventListener("click", () => {
             hamburgher.classList.toggle("active");
             navmenu.classList.toggle("active");
         })
-        document.querySelectorAll(".nav-link").forEach(n >= n.addEventListener("click", () => {
+        document.querySelectorAll(".link").forEach(n >= n.addEventListener("click", () => {
             hamburgher.classList.remove("active");
             navmenu.classList.remove("active");
         }))
